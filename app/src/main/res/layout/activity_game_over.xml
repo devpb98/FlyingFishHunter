@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".GameOver">
+
+    <ImageView
+        android:id="@+id/imgOverId"
+        android:layout_width="263dp"
+        android:layout_height="225dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/kisspng_one_fish_two_fish_red_fish_blue_fish_clip_art_5afc8878e8f0d5_8512835415264994489541" />
+
+    <TextView
+        android:id="@+id/overTextId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgOverId"
+        android:text="@string/game_over"
+        android:textAlignment="center"
+        android:textColor="#EB400A"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/scoreId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/overTextId"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"
+        android:textColor="#B64304"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/btnPlayAgainId"
+        android:layout_width="301dp"
+        android:layout_height="55dp"
+        android:layout_above="@id/llId"
+        android:layout_below="@id/scoreId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/buttontesting"
+        android:text="@string/play_again"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FF5722"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@+id/llId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/hs1Id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:text="0"
+            android:textColor="#D37023"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/hs2Id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:text="0"
+            android:textColor="#F57F17"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/hs3Id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:text="0"
+            android:textColor="#F57F17"
+            android:textSize="40sp" />
+    </LinearLayout>
+</RelativeLayout>

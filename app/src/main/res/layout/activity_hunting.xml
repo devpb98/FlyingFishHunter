@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".HuntingActivity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="@string/flyingfish_food_barn"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/tv1"
+        android:layout_margin="30dp"
+        android:src="@drawable/kisspng_one_fish_two_fish_red_fish_blue_fish_clip_art_5afc8878e8f0d5_8512835415264994489541"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/todo" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttontesting"
+        android:text="@string/Play"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/by_da_developers"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:id="@+id/llHuntingId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnStart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btncircle"
+            android:src="@drawable/icons8_settings_64"
+            android:text="Rule" />
+
+        <ImageButton
+            android:id="@+id/btnFishColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btncircle"
+            android:src="@drawable/icons8_clown_fish_64"
+            android:text="fish" />
+
+        <ImageButton
+            android:id="@+id/btnRule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btncircle"
+            android:src="@drawable/icons8_term_filled_64" />
+    </LinearLayout>
+
+</RelativeLayout>

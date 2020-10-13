@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Fish Food</string>
+    <string name="flyingfish_food_barn">FlyingFish Food Barn</string>
+    <string name="Play">Play</string>
+    <string name="by_da_developers">By: DA Developers</string>
+    <string name="todo">TODO</string>
+    <string name="game_over">Game Over</string>
+    <string name="play_again">Play Again</string>
+    <string name="rules">
+        Hii, Happy to see you!!\n\n
+        Rules for the Game:\n
+        Yellow Ball : 5 Points\n
+        Green Ball  : 10 Points\n
+        Red Ball    : -1 Life\n
+        \n
+        After scoring 500 you will get one more lifeline but only if you have lost any lifeline.\n\n
+        Thank You!!
+    </string>
+
+</resources>
